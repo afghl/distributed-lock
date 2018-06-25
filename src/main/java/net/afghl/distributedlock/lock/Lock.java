@@ -1,4 +1,7 @@
-package net.afghl.lock;
+package net.afghl.distributedlock.lock;
+
+import java.util.ArrayList;
+import java.util.stream.Stream;
 
 public interface Lock {
     LockHolder lock(String key, int timeout);

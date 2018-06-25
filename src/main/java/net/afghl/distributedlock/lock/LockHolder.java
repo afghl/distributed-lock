@@ -1,4 +1,4 @@
-package net.afghl.lock;
+package net.afghl.distributedlock.lock;
 
 import java.io.Closeable;
 
