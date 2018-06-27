@@ -4,6 +4,9 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Condition;
 
 public class ReentrantRedisLock implements TimeoutDistributedLock {
+    private String lockId;
+    private String name;
+
     @Override
     public void lock() {
 
