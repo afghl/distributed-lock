@@ -1,11 +1,11 @@
 package net.afghl.distributedlock.lock;
 
+import net.afghl.distributedlock.client.LockContext;
+
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Condition;
 
-public class ReentrantRedisLock implements TimeoutDistributedLock {
-    private String lockId;
-    private String name;
+public class ReentrantRedisLock extends AbstractLock implements TimeoutDistributedLock {
 
     @Override
     public void lock() {
